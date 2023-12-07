@@ -13,7 +13,16 @@ if (taskText !== ''){
     const listItem = document.createElement('li');
     listItem.textContent = taskText;
     taskList.appendChild(listItem);
-    taskInput.value = '';
+    
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', function(event){
+        taskList.removeChild(listItem);
+    })
+listItem.appendChild(deleteButton);
+taskList.appendChild(listItem);
+taskInput.value = '';
 } 
+
 }
 });
