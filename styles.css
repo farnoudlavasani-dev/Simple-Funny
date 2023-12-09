@@ -75,3 +75,41 @@ button {
     color: white;    
     padding: 5px;
 }
+img.rubik {
+    position: fixed;
+    top:0;
+    left:0;
+}
+img.chess {
+    position: fixed;
+    top:0;
+    right:0;
+}
+img.computer {
+    position: fixed;
+    bottom: 0;
+    right:0;
+    animation-name: geek;
+    animation-duration: 2s;
+    animation-iteration-count:4;
+}
+img.robot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation-name: robot;
+    animation-duration: 3s;
+    animation-iteration-count:3;
+}
+@keyframes robot {
+    0%   {background-color:red; left:0px; bottom:0px;}
+    25%  {background-color:yellow; left:50px; bottom:0px;}
+    50%  {background-color:blue; left:80px; bottom:0px;}
+    75%  {background-color:green; left:50px; bottom:0px;}
+    100% {background-color:red; left:0px; bottom:0px;}
+  }
+  @keyframes geek {
+    0%    {right:0px;bottom: 0px;}
+    50%   {right:0px;bottom: 20px;}
+    100%  {right:0px;bottom: 0px;}
+  }
