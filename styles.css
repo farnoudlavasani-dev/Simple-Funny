@@ -50,21 +50,21 @@ input::placeholder {
     color: white;
     font-size: 18px;
 }
-ul {
+ul#taskList {
     padding: 40px;
     text-align: center;
 }
-li {
+ul#taskList li {
     list-style-type:decimal;
     text-align: center;
     padding: 10px;
     font-size: 20px;
     margin-bottom: 5px;
 }
-li:nth-child(even){
+ul#taskList li:nth-child(even){
     background-color: pink;
 }
-li:nth-child(odd){
+ul#taskList li:nth-child(odd){
     background-color: #AEDEFC;
 }
 button {
@@ -101,6 +101,26 @@ img.robot {
     animation-duration: 3s;
     animation-iteration-count:3;
 }
+#menu-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+#menu-header li{
+   display: inline;
+   padding: 20px;
+   font-size: 20px;
+}
+#menu-header a {
+text-decoration: none;
+color: black;
+}
+#menu-header a:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid pink;
+    }
 @keyframes robot {
     0%   {background-color:red; left:0px; bottom:0px;}
     25%  {background-color:yellow; left:50px; bottom:0px;}
