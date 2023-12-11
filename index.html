@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-grid-system.css">
   <title> To-Do list</title>
 </head>
 <body>
@@ -14,22 +15,26 @@
       <a href="https://open.spotify.com/album/2oLEPO6O2RHcyWo5iWAUkr"><li>vigen&b-band</li></a>
     </ul>
   </header>
-  <div class="container">
+  <div>
     <div class="todo-list">
       <h1>To-Do List <img width="50px" height="auto" src="assest/img/bookworm.png"></h1>
       <img class="rubik" width="65px" height="auto" src="assest/img/rubik.png">
       <img class="chess" width="65px" height="auto" src="assest/img/board-game.png">
       <img class="computer" width="65px" height="auto" src="assest/img/computer.png">
       <img class="robot" width="65px" height="auto" src="assest/img/robot.png">
+      
       <form id="taskForm">
         <input id="taskInput" type="text" placeholder="add your text here">
+        <input id="categoryTask" type="text" placeholder="category">
         <button id="submitTask">Submit</button>
       </form>
-      <ul id="taskList">
-        <li>todoList Project with javascript</li>
-        <li>password generator Project with javascript</li>
-      </ul>
-
+      <div class="container col-md-offset-1">
+        <ul id="taskList">
+          <li>todoList Project with javascript</li>
+          <li>password generator Project with javascript</li>
+        </ul>
+   </div>
+      
     </div>
     
   </div>
