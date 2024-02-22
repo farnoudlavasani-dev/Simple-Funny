@@ -1,3 +1,6 @@
+
+alert(`test`);
+
 document.addEventListener('DOMContentLoaded', function() {
 const taskForm = document.getElementById('taskForm');
 const taskInput = document.getElementById('taskInput');
