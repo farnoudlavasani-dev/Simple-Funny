@@ -1,5 +1,14 @@
+/*
+console.log(`blue`);
+console.log(`red`);
 
-alert(`test`);
+alert(`its just a alert`);
+window.alert(`its a window alert`);
+*/
+
+document.getElementById(`h31`).innerHTML = `<a target=_blank; href="https://github.com/farnoudlavasani-dev">twenty</a>`;
+document.getElementById(`h32`).textContent = `twenty one`;
+document.getElementById(`h33`).textContent = `twenty two`;
 
 document.addEventListener('DOMContentLoaded', function() {
 const taskForm = document.getElementById('taskForm');
